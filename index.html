@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- style tag used in head. If body has another style tag it will override. -->
+    <!--  
+            Selectors are used to select  or target a specific element to apply styles.
+            Types
+            1. Simple selectors
+                a. Type/Elememt/Name selector
+                b. Id selector
+                c. Class selector
+                d. Universal selector
+                e. Grouping selector
+            2. Combinators
+                a. Child selector
+                b. Descandant selector
+                c. General sibling selector
+                d. Adjacent sibling selector
+            3. Pseudo selectors
+                a. Pseudo classes
+                b. Pseudo elements
+            4. Attribute selectors
+
+            Order is 
+            inline styles
+            id selector
+            class selector
+            type/element selector
+            pseudo classes
+            attribute selector/pseudo elements
+    -->
+
+    <!-- type selectors example -->
+    <style>
+        /* element selector syntax 
+        elementName {
+            property : value;
+            } */
+        
+          h1 {
+                color: yellow;
+                color: green;
+          }
+
+          h1 {
+            color: aqua;
+          }
+        
+    </style>
+
+    <!-- Id selectors -->
+     <!-- #id {
+        property: value;
+      }
+     -->
+     <style>
+        #a {
+            color: yellow;
+        }
+     </style>
+
+     <!-- class selectors -->
+      <!-- .classname {
+        property : value 
+      } -->
+    <style>
+        .b {
+            color: orchid;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- inline styles -->
+    <!-- property : value; -->
+    <h1 style="color: red;">Hello World 1</h1>
+
+    <!-- internal styles -->
+    <h1>Hello World 2</h1>
+    <h1>Hello World 3</h1>
+
+    <!-- id selector -->
+    <h1 id="a">Hello World 4</h1>
+
+    <!-- class selector -->
+     <h1 class="b">Hello World 5</h1>
+     <style>
+        h1 {
+            color: blueviolet;
+        }
+     </style>
+
+    <!-- external stles sheet  -->
+     <h1 class="a" id="b"> Normal Text</h1>
+</body>
+</html>
